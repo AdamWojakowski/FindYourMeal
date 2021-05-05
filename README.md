@@ -11,3 +11,5 @@ When the name of the dish is clicked a modal with dynamically filled recipe is s
 There are no additional libraries or frameworks used, just pure JS, CSS and HTML.
 
 Most of the elements are responsive to window size. Placing of the html elements is done by css grid and a little bit of flexbox.
+
+Available online under https://distracted-jang-64cbf0.netlify.app/
