@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "filtersHeader   header"
+    "filters         list"
+    "filters         list"
+    "footer         footer";
+  grid-template-rows: min-content auto auto min-content;
+  grid-template-columns: 5em auto;
+}
+#filtersHeader {
+  grid-area: filtersHeader;
+}
+#filters {
+  grid-area: filters;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: list;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 600px) {
+  body {
+    grid-template-columns: 7em auto;
+  }
+}
+
+@media (min-width: 847px) {
+  body {
+    grid-template-columns: 10em auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: 12em auto;
+  }
+}

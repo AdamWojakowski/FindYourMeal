@@ -1,0 +1,266 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.dishesMinor {
+  text-align: center;
+}
+
+form {
+  color: black;
+}
+
+#recipeModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+#modalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#listAndButton {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#showAddButton {
+  font-size: 1em;
+}
+
+#copyright {
+  font-size: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#adding {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border: 0.1em black;
+  border-style: solid;
+}
+
+#addButton {
+  margin-top: 0.5em;
+}
+
+#logo {
+  padding-left: 1em;
+  max-width: auto;
+  height: 70px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+}
+
+.filtersMain,
+.dishesMinor {
+  font-size: 0.8em;
+}
+
+.filtersMinor {
+  font-size: 0.7em;
+}
+
+header {
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 0.03em 0.03em grey;
+  font-style: oblique;
+}
+
+header,
+.header {
+  background-color: rgba(148, 0, 211, 0.438);
+}
+
+.header {
+  padding-bottom: 2em;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  padding: 1em;
+  color: black;
+}
+
+a:hover,
+a:active {
+  background-color: yellow;
+  border: 0.1em black;
+  border-style: solid;
+}
+
+.filtersMinor > div > label:hover,
+.filtersMinor > div > input:hover,
+.dishesMinor,
+#showAddButton,
+#addButton {
+  cursor: pointer;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: rgba(0, 211, 46, 0.438);
+}
+
+main {
+  background-color: rgb(31, 30, 30);
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: white;
+  border: solid 0.1em black;
+}
+
+#filtersHeader {
+  display: block;
+  position: relative;
+  font-size: 1em;
+}
+
+#filtersHeader > div {
+  position: absolute;
+  bottom: 0.3em;
+}
+
+#filters {
+  background-color: chocolate;
+  border: solid 0.1em black;
+}
+
+@media (min-width: 600px) {
+  #logo {
+    max-width: auto;
+    height: 100px;
+  }
+
+  #copyright {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+  }
+
+  .filtersMain,
+  .dishesMinor {
+    font-size: 1em;
+  }
+
+  header {
+    font-size: 3em;
+    text-shadow: 0.06em 0.06em grey;
+  }
+
+  .mid {
+    font-size: 2.5em;
+  }
+
+  a:link,
+  a:visited {
+    padding: 0.4em;
+  }
+
+  #filtersHeader {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 847px) {
+  #copyright {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .filtersMain,
+  .dishesMinor {
+    font-size: 1.4em;
+  }
+
+  header {
+    font-size: 5em;
+    text-shadow: 0.075em 0.075em grey;
+  }
+
+  .mid {
+    font-size: 3.5em;
+  }
+
+  #filtersHeader {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filtersMain,
+  .dishesMinor {
+    font-size: 1.7em;
+  }
+
+  header {
+    font-size: 7em;
+    text-shadow: 0.075em 0.075em grey;
+  }
+
+  .mid {
+    font-size: 5em;
+    vertical-align: middle;
+  }
+
+  #filtersHeader {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 2.2em;
+  }
+}

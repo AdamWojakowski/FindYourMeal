@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Meal</title>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+  <header>FIND YOUR MEAL</header>
+
+  <main>
+    <div id="listAndButton">
+      <div class=dishesMinor id="name"></div><br>
+      <input type="button" name="showAddButton" id="showAddButton">
+    </div>
+
+    <div id="adding">
+      <form id="addMeal">
+        <label for="name">Name:</label><br>
+        <input type="text" id="nameForm" name="name" placeholder="chilli con carne"><br>
+        <label for="category">Category:</label><br>
+        <input type="text" id="categoryForm" name="category" placeholder="main course"><br>
+        <label for="spices">Spices:</label><br>
+        <input type="text" id="spicesForm" name="spices" placeholder="chilli, granulated garlic"><br>
+        <label for="meats">Meats:</label><br>
+        <input type="text" id="meatsForm" name="meats" placeholder="pork"><br>
+        <label for="veggies">Veggies:</label><br>
+        <input type="text" id="veggiesForm" name="veggies" placeholder="bell pepper, onion, beans, corn"><br>
+        <label for="other">Other:</label><br>
+        <input type="text" id="otherForm" name="other" placeholder=""><br>
+        <label for="recipe">Recipe:</label><br>
+        <textarea name="recipe" id="recipeForm" cols="30" rows="10" placeholder="Here goes your recipe... (In places where you written 'Veggies', 'Spices' etc. the elements of that type which has been checked on the left will be inserted"></textarea><br>
+        <input type="button" value="Add" id="addButton"> 
+      </form>
+    </div>
+  </main>
+
+  <div id="recipeModal">
+
+    <div id="modalContent">
+      <span id="close">&times;</span>
+      <p id="modalInner"></p>
+    </div>
+    
+  </div>
+
+  <div class="header" id="filtersHeader">
+    <div>FILTERS</div>
+  </div>
+  <div id="filters">
+    <div class="filtersMain">
+      <span>Spices</span>
+      <div id="spices" class="filtersMinor"></div>          
+    </div><br>    
+    <div class="filtersMain">
+      <span>Meats</span>                                       
+      <div id="meats" class="filtersMinor"></div>                      
+    </div><br>
+    <div class="filtersMain">
+      <span>Veggies</span>
+      <div id="veggies" class="filtersMinor"></div>
+    </div><br>
+    <div class="filtersMain">
+      <span>Other</span>
+      <div id="other" class="filtersMinor"></div> 
+    </div><br>
+    <div class="filtersMain">
+      <span>Category</span>
+      <div id="category" class="filtersMinor"></div>
+    </div><br>
+  </div>
+
+  <footer>
+    <img src="logo.png" alt="logo" id="logo">
+    <span id="copyright">
+      //placeholder
+    </span>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
